@@ -1,0 +1,162 @@
+/* BASIC STYLING */
+* {
+    /* box-sizing: border-box; */
+    margin: 0 auto;
+}
+
+.container,
+.main-footer,
+.banner {
+    text-align: center;
+    padding: 30px;
+}
+
+#intro-paragraph {
+    color: rgb(169, 169, 169);
+}
+
+.main-header,
+.main-footer {
+    background-color: rgb(247, 247, 247);
+    margin: 0 auto;  
+}
+
+
+p,
+a,
+h1,
+h2,
+h3 {
+    font-size: 20px;
+    font-family: 'Raleway', 'Varela Round', sans-serif;
+    line-height: 1.5em;
+    padding: 5px;
+}
+
+#name {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: white;
+}
+
+a:visited{
+    color: black;
+}
+
+img {
+    max-width: 80%;
+    padding: 25px;
+}
+
+/* NAVIGATION STYLING */
+nav {
+    width: 100%;
+}
+
+nav a {
+    display: block;
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* MEDIA QUERIES */
+@media(min-width: 768px){
+    img {
+        width: 80%;
+    }
+
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .main-footer {
+        width: 100%;
+        margin: 0 auto;
+        }
+
+    nav a {
+        display: inline-block;
+        background-color: rgb(247, 247, 247);
+    }
+
+    #profile-pic{
+        width: 40%;
+        float: right;
+        box-sizing: border-box;
+        
+    }
+
+    #intro-paragraph {
+        text-align: left;
+        float: left;
+        padding: 20px;
+        width: 50%;
+        
+    }
+
+    .col {
+        width: 50%;
+        float: left;
+        display: block;
+    }
+
+
+    .clearfix {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@media(min-width: 1024px){
+    .container {
+        /* width: 80%; */
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .main-footer {
+        margin: 10px;
+    }
+
+    #name {
+        float: left;
+        margin: 10px;
+        padding: 10px;
+        /* margin-left: 20px; */
+    }
+    .main-nav {
+         float: right; 
+    }
+
+    .main-nav a {
+        float: left;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #profile-pic {
+        float: right;
+       
+    }
+
+    #intro-paragraph {
+        /* float: left; */
+        margin: 10px;
+        padding: 10px;
+        /* margin-left: 20px; */
+    }
+    
+    .col {
+        float: left;
+        width: 33.33%
+    }
+}
